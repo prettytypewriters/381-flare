@@ -1,0 +1,336 @@
+/*<meta />*/
+
+/* Home Page General Styles*/
+
+body
+{
+	font-family: Arial;
+	line-height: 1.5em;
+}
+
+a.BlackText
+{
+	color: #000000;
+	text-decoration: none;
+}
+
+h1
+{
+	font-size: 2.75em;
+}
+
+h3
+{
+	font-size: 1.6785em;
+}
+
+h3.SubCenter
+{
+	text-align: center;
+}
+
+img.Hyperlinked
+{
+	border-style: none;
+}
+
+p
+{
+	color: #5a5a5a;
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+p.Copyright
+{
+	font-size: 0.9em;
+	text-align: left;
+	color: #888888;
+	line-height: 1.6em;
+	margin: 0 0 10px 0
+}
+
+.centered-text
+{
+	text-align: center;
+}
+
+.center
+{
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	float: none !important;
+	text-align: center;
+}
+
+.whiteheader
+{
+	color: #ffffff;
+	font-weight: normal;
+}
+
+.main-section > .row.outer-row
+{
+	max-width: 100%;
+	padding: 0;
+}
+
+/* Home Page Button Styles */
+
+.button
+{
+	cursor: pointer;
+	background-color: transparent;
+	width: 200px;
+	height: 35px;
+	font-weight: bold;
+    -webkit-transition: all 200ms;
+    -moz-transition: all 200ms;
+    -ms-transition: all 200ms;
+    -o-transition: all 200ms;
+    transition: all 200ms;
+}
+
+.button.black
+{
+	border: solid 2px black;
+	color: black;
+}
+
+.button.black:hover
+{
+    background-color: #ccc;
+}
+
+.button a
+{
+	display: block;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+}
+
+/* Responsive Header Styles*/
+
+#contentBody > .responsive-header
+{
+	background-color: transparent;
+}
+
+/* Content Section */
+
+#content-section
+{
+	padding-top: 60px;
+	padding-bottom: 60px; 
+	background-color: #e6e6e6;
+	margin-top: -50px;
+}
+
+#content-section h3
+{
+	font-weight: normal;
+}
+
+.right-section div.button-group, .left-section div.button-group
+{
+	margin-top: 20px;
+}
+
+#content-section .left-section
+{
+	padding-right: 20px;
+}
+
+#content-section .right-section
+{
+	padding-left: 20px;
+}
+
+.left-section .left-content, .right-section .right-content
+{
+	height: 270px;
+}
+
+#content-section .right-section .table-images:first-of-type
+{
+	margin-bottom: 20px;
+}
+
+#content-section.mc-blurb p
+{
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+#content-section.mc-blurb .mc-bullets
+{
+	margin-top: 10px;
+	padding-left: 30px;
+	padding-right: 10px;
+}
+
+#content-section.mc-blurb .mc-bullets > li
+{
+	color: #5a5a5a;
+	list-style-image: url('../Images/Bullet1.png');
+	font-size: 14px;
+	margin-top: 8px;
+	line-height: 1.6em;
+}
+
+/* Home Page Topic Hero section*/
+
+div.topichero
+{
+	background-image: url('../Images/BackgroundImage.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 20px;
+	height: auto;
+	padding-bottom: 150px;
+}
+
+div.topichero h1
+{
+	font-size: 3.6em;
+	margin-top: 1.11em;
+	margin-bottom: 0.5em;
+	line-height: 100%;
+}
+
+div.topichero h3
+{
+	font-size: 1.8em;
+	margin-bottom: 80px;
+	line-height: 100%;
+}
+
+/* Home Page Footer */
+
+.footer
+{
+	background-color: #292928;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.footer a
+{
+	text-decoration: none;
+	color: #DADADA;
+}
+
+.footer > div.row
+{
+	line-height: 30px;
+	padding: 0;
+}
+
+.footer-logo 
+{
+	max-width: 100%;
+}
+
+.footer-links
+{
+	text-align: left;
+}
+
+.footer-links a
+{
+	padding-right: 15px;
+}
+
+.footer-icons
+{
+	text-align: right;
+}
+
+.footer-icons > a:first-of-type
+{
+	padding-right: 10px;
+}
+
+
+/* Mad Cap proxy/editor assigned styles */
+
+MadCap|topicToolbarProxy
+{
+	float: none;
+}
+
+p.TOC2
+{
+	margin-left: 20px;
+	display: none;
+}
+
+MadCap|menuProxy.menu1
+{
+	mc-toc-depth: 1;
+	mc-context-sensitive: True;
+}
+
+MadCap|menuProxy.menu2
+{
+	mc-toc-depth: 1;
+	mc-context-sensitive: True;
+}
+
+html.HomePage
+{
+	mc-master-page: url('../MasterPages/HomePage.flmsp');
+    mc-community-features: disabled;
+}
+
+/* Medium Layout */
+@media only screen and (max-width: 64.063em)
+{
+	#content-section .right-section,
+	#content-section .left-section
+	{
+		padding: 0;
+	}
+
+	.left-section div.button-group > div
+	{
+		margin-bottom: 20px;
+	}
+	
+	.footer
+	{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+
+/* Small Layout */
+@media screen and (max-width: 40em)
+{
+	div.topichero h1
+	{
+		font-size: 2em;
+	}
+	
+	div.topichero h3
+	{
+		font-size: 1.2em;
+	}
+	
+	#content-section 
+	{
+	  padding-top: 30px;
+	  padding-bottom: 30px;
+	}
+	
+	.footer-links, 
+	p.Copyright, 
+	.footer-icons
+	{
+		text-align: center;
+	}
+}
